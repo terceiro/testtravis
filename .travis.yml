@@ -1,0 +1,5 @@
+dist: trusty
+addons:
+  postgresql: 9.5
+script:
+  - psql -c 'SHOW server_version;' -U postgres template1
